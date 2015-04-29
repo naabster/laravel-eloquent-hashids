@@ -1,0 +1,28 @@
+{
+  "name": "naabster/laravel-eloquent-hashids",
+  "description": "Automatically generate hashids in Laravel for a new Eloquent Model.",
+  "keywords": [
+    "laravel",
+    "eloquent",
+    "hashids",
+    "hashid"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Michael Naab",
+      "email": "naabster@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "illuminate/database": "~5.0",
+    "vinkla/hashids": "~1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Naabster\\EloquentHashids\\": "src/"
+    }
+  },
+  "minimum-stability": "dev"
+}
