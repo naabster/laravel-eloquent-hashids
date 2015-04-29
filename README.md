@@ -140,4 +140,4 @@ class Book extends Model
 
 ## License
 
-The Laravel Hashids package is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+The Laravel 5 Eloquent Hashids package is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
