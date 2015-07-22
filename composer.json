@@ -16,8 +16,8 @@
   ],
   "require": {
     "php": ">=5.4.0",
-    "illuminate/database": "~5.0",
-    "vinkla/hashids": "~1.0"
+    "illuminate/database": "^5.1.0",
+    "vinkla/hashids": "^2.0"
   },
   "autoload": {
     "psr-4": {

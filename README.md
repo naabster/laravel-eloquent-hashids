@@ -1,7 +1,7 @@
 Laravel 5 Eloquent Hashids
 ==========================
 Laravel 5 Eloquent Model trait for automatically generating [Hashids](http://hashids.org) for new models. 
-Uses [@vinkla's Laravel 5 Hashids package](https://github.com/mitchellvanw/hashids).
+Uses [@vinkla's Laravel 5 Hashids package](https://github.com/vinkla/hashids).
 
 [![Latest Stable Version](http://img.shields.io/packagist/v/naabster/laravel-eloquent-hashids.svg?style=flat)](https://packagist.org/packages/naabster/laravel-eloquent-hashids)
 [![License](https://img.shields.io/packagist/l/naabster/laravel-eloquent-hashids.svg?style=flat)](https://packagist.org/packages/naabster/laravel-eloquent-hashids)
