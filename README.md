@@ -1,6 +1,6 @@
 Laravel 5 Eloquent Hashids
 ==========================
-Laravel 5 Eloquent Model trait for automatically generating [Hashids](http://hashids.org) for new models. 
+Laravel 5 Eloquent Model trait for automatically generating **and persistently saving** [Hashids](http://hashids.org) for new models.  
 Uses [@vinkla's Laravel 5 Hashids package](https://github.com/vinkla/hashids).
 
 [![Latest Stable Version](http://img.shields.io/packagist/v/naabster/laravel-eloquent-hashids.svg?style=flat)](https://packagist.org/packages/naabster/laravel-eloquent-hashids)
@@ -14,6 +14,7 @@ Require this package, with [Composer](https://getcomposer.org/), in the root dir
 composer require naabster/laravel-eloquent-hashids:~1.0
 ```
 
+You should first install [@vinkla's Laravel 5 Hashids package](https://github.com/vinkla/hashids) according to their installation instructions.
 
 ## Usage
 
@@ -60,7 +61,7 @@ class Book extends Model
 }
 ```
 
-Make sure you set your connections in your `config/hashids.php` config file!
+Make sure you set your connections in your `config/hashids.php` config file (comes with @vinkla's Laravel 5 Hashids package)!
 
 #### Column Name
 
@@ -83,9 +84,14 @@ class Book extends Model
 }
 ```
 
+**Attention**
+
+This package generates Hashids for new models and saves them to a column in your database table! To be able to do that, this column must exist in your table.  
+You should add this column to your model with a [database migration](https://laravel.com/docs/5.3/migrations).
+
 #### Encoding Value
 
-By default the Value/Number for your Hashid is the `id` attribute of your model. You can adjust that any way you 
+By default the Value/Number for your Hashid is the `primary Key` attribute of your model (defaults to `id`). You can adjust that any way you 
 want, just make sure it is `Hashids` compatible. Just return another value from `static::getHashidEncodingValue()`:
 
 ```php

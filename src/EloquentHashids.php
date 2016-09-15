@@ -49,6 +49,6 @@ trait EloquentHashids
    */
   public static function getHashidEncodingValue(Model $model)
   {
-    return $model->id;
+    return $model->getKey();
   }
 }
