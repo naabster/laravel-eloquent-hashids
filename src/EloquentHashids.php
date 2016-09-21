@@ -31,7 +31,7 @@ trait EloquentHashids
    */
   public static function getHashidConnection(Model $model)
   {
-    return 'table.' . $model->table;
+    return 'table.' . $model->getTable();
   }
 
   /**
